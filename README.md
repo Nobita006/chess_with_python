@@ -1,7 +1,7 @@
 # Game Instructions
 
 - Entry point: main.py
-- Press 't' to change theme (green, brown, blue, gray)
+- Press 't' to change theme (green, brown, blue, grey)
 - Press 'r' to reset the game
 
 # Screenshots
