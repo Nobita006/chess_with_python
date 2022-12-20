@@ -1,6 +1,8 @@
 import pygame
 import sys
 
+import asyncio
+
 from const import *
 from game import Game
 from square import Square
@@ -14,7 +16,7 @@ class Main:
         pygame.display.set_caption('Chess')
         self.game = Game()
 
-    def mainloop(self):
+    async def mainloop(self):
         
         screen = self.screen
         game = self.game
@@ -125,7 +127,11 @@ class Main:
                     sys.exit()
             
             pygame.display.update()
+            await asyncio.sleep(0)
 
 
 main = Main()
-main.mainloop()
+asyncio.run(main.mainloop())
+#main.mainloop()
+
+#app.run -> asyncio.run(app.run())
